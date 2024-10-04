@@ -1,7 +1,7 @@
-export const DOMAIN = 'http://localhost:3000';
-// export const DOMAIN = 'https://www.secret-class.online';
+// export const DOMAIN = 'http://localhost:3000';
+export const DOMAIN = 'https://www.secretclass.in.net';
 
-export const DOMAIN_NAME = 'secretclass.online';
+export const DOMAIN_NAME = 'www.secretclass.in.net';
 
 export const IMAGES_SUBDOMAIN = 'https://images.mangachimp.com/secret-class';
 export const IMAGES_SUBDOMAIN_LOGO = 'https://images.mangachimp.com';
