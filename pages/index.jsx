@@ -53,7 +53,7 @@ export default function Home() {
         "thumbnailUrl": `${COVER_IMG}`,
         // "datePublished": "2019-05-24T22:29:53+00:00",
         // "dateModified": "2024-01-13T01:17:47+00:00",
-        "description": "A young boy named Dae Ho, who tragically lost his parents at the age of 13, was taken in by a close family friend of his father. As Dae Ho grew into adulthood, he remained naive and inexperienced when it came to understanding the dynamics of relationships between men and women. Concerned for him, his aunt and cousins decided to guide him through what they felt he needed to know, offering him a private and discreet education. This tale revolves around the complex relationships between a married woman, her two daughters, and the boy they welcomed into their home.",
+        "description": `Read ${MANGA_NAME} ${MANGA_TYPE} online. A young boy named Dae Ho, who tragically lost his parents at the age of 13, was taken in by a close family friend of his father. As Dae Ho grew into adulthood, he remained naive and inexperienced when it came to understanding the dynamics of relationships between men and women. Concerned for him, his aunt and cousins decided to guide him through what they felt he needed to know, offering him a private and discreet education. This tale revolves around the complex relationships between a married woman, her two daughters, and the boy they welcomed into their home.`,
         "breadcrumb": {
           "@id": `${DOMAIN}/#breadcrumb`
         },

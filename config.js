@@ -3,8 +3,8 @@ export const DOMAIN = 'https://www.secretclass.in.net';
 
 export const DOMAIN_NAME = 'www.secretclass.in.net';
 
-export const IMAGES_SUBDOMAIN = 'https://images.mangachimp.com/secret-class';
-export const IMAGES_SUBDOMAIN_LOGO = 'https://images.mangachimp.com';
+export const IMAGES_SUBDOMAIN = 'https://images.secretclass.in.net/secret-class';
+export const IMAGES_SUBDOMAIN_LOGO = 'https://images.secretclass.in.net';
 
 // export const MANGA_DESCRIPTION0 = `<a href="${DOMAIN}"><u>Vinland Saga</u></a>`;
 
