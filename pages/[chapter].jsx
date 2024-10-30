@@ -239,9 +239,9 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
 
 
     const handleRedirect = () => {
-        setTimeout(() => {
-            window.open('https://thampolsi.com/4/7457654', '_blank');
-        }, 3000);
+        // setTimeout(() => {
+        window.open('https://thampolsi.com/4/7457654', '_blank');
+        // }, 3000);
     };
 
 
