@@ -124,7 +124,11 @@ export default function Home() {
   };
 
 
-
+  const handleRedirect = () => {
+    setTimeout(() => {
+      window.open('https://thampolsi.com/4/7457654', '_blank');
+    }, 3000);
+  };
 
 
   const head = () => (
@@ -218,7 +222,9 @@ export default function Home() {
 
             {chapters?.map((chapter, index) => (
               <div className="flex hover:scale-105 active:scale-95 transition-transform my-1" key={index}>
-                <a href={chapter.url} className="sm:p-5 p-1.5 text-center  hover:underline text-white bg-black hover:bg-[#2c2b2b] border border-[#292828] rounded sm:w-[160px] w-[110px]">
+                <a
+                  onClick={handleRedirect}
+                  href={chapter.url} className="sm:p-5 p-1.5 text-center  hover:underline text-white bg-black hover:bg-[#2c2b2b] border border-[#292828] rounded sm:w-[160px] w-[110px]">
                   <p className="sm:text-[14px] text-[12px] tracking-wider font-semibold">{`Chapter  ${chapter?.number}`}</p>
                 </a>
               </div>
