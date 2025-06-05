@@ -37,173 +37,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
     const URL = params.chapter;
 
 
-    const schema00 =
-    {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": `${DOMAIN}/${URL}`
-        },
-        "headline": `${MANGA_NAME} Chapter ${chapterNumber}`,
-        "description": `${DESCRIPTION}`,
-        "image": `${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}/1.webp`,
-        "author": {
-            "@type": "Person",
-            "name": `${MANGA_NAME} Team`,
-            "url": `${AUTHOR_PAGE}`
-        },
-        "publisher": {
-            "@type": "Person",
-            "name": `${APP_NAME}`,
-            "logo": {
-                "@type": "ImageObject",
-                "url": `${LOGO_URL}`
-            }
-        },
-    }
 
-
-    const schema = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Article",
-                "@id": `${DOMAIN}/${URL}/#article`,
-                "isPartOf": {
-                    "@id": `${DOMAIN}/${URL}`,
-                },
-                "author": {
-                    "name": "Divyanshu Rawat",
-                    "@id": `${DOMAIN}/#/schema/person/7edc4ad8bsc84d70b9422d149194021b`,
-                },
-                "headline": `${MANGA_NAME} Chapter ${chapterNumber}`,
-                "mainEntityOfPage": {
-                    "@id": `${DOMAIN}/${URL}`
-                },
-                "wordCount": 150,
-                "commentCount": 34,
-                "publisher": {
-                    "@id": `${DOMAIN}/#organization`
-                },
-                "image": {
-                    "@id": `${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}/1.webp`,
-                },
-                "thumbnailUrl": `${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}/1.webp`,
-                "articleSection": ["Manga Series"],
-                "inLanguage": "en-US",
-                "potentialAction": [
-                    {
-                        "@type": "CommentAction",
-                        "name": "Comment",
-                        "target": [
-                            `${DOMAIN}/${URL}/#respond`
-                        ]
-                    }
-                ]
-            },
-            {
-                "@type": "WebPage",
-                "@id": `${DOMAIN}/${URL}`,
-                "url": `${DOMAIN}/${URL}`,
-                "name": `${MANGA_NAME} Chapter ${chapterNumber}`,
-                "isPartOf": {
-                    "@id": `${DOMAIN}/#website`
-                },
-                "primaryImageOfPage": {
-                    "@id": `${DOMAIN}/${URL}/#primaryimage`
-                },
-                "image": {
-                    "@id": `${DOMAIN}/${URL}/#primaryimage`
-                },
-                "thumbnailUrl": `${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}/1.webp`,
-                "description": `Read ${MANGA_NAME} manga Online at ${DOMAIN_NAME}.`,
-                "breadcrumb": {
-                    "@id": `${DOMAIN}/${URL}/#breadcrumb`
-                },
-                "inLanguage": "en-US",
-                "potentialAction": [
-                    {
-                        "@type": "ReadAction",
-                        "target": [
-                            `${DOMAIN}/${URL}`
-                        ]
-                    }
-                ]
-            },
-            {
-                "@type": "ImageObject",
-                "inLanguage": "en-US",
-                "@id": `${DOMAIN}/${URL}/#primaryimage`,
-                "url": `${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}/1.webp`,
-                "contentUrl": `${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}/1.webp`,
-            },
-            {
-                "@type": "BreadcrumbList",
-                "@id": `${DOMAIN}/${URL}/#breadcrumb`,
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": `${DOMAIN}`
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": `${MANGA_NAME} Chapter ${chapterNumber}`,
-                    }
-                ]
-            },
-            {
-                "@type": "WebSite",
-                "@id": `${DOMAIN}/#website`,
-                "url": `${DOMAIN}`,
-                "name": "My Manga Blog",
-                "description": `Read ${MANGA_NAME} manga Online at ${DOMAIN_NAME}.`,
-                "publisher": {
-                    "@id": `${DOMAIN}/#organization`
-                },
-                "potentialAction": [
-                    {
-                        "@type": "SearchAction",
-                        "target": {
-                            "@type": "EntryPoint",
-                            "urlTemplate": `${DOMAIN}/?s={search_term_string}`,
-                        },
-                        "query-input": {
-                            "@type": "PropertyValueSpecification",
-                            "valueRequired": true,
-                            "valueName": "search_term_string"
-                        }
-                    }
-                ],
-                "inLanguage": "en-US"
-            },
-            {
-                "@type": "Organization",
-                "@id": `${DOMAIN}/#organization`,
-                "name": "My Secret Class Blog",
-                "url": `${DOMAIN}`,
-                "logo": {
-                    "@type": "ImageObject",
-                    "inLanguage": "en-US",
-                    "@id": `${DOMAIN}/#/schema/logo/image/`,
-                    "url": `${LOGO_URL}`,
-                    "contentUrl": `${LOGO_URL}`,
-                    "width": 192,
-                    "height": 192,
-                    "caption": "My Secret Class Blog"
-                },
-                "sameAs": []
-            },
-            {
-                "@type": "Person",
-                "@id": `${DOMAIN}/#/schema/person/7edc4ad8p1cf4d70b7422c149194021b`,
-                "name": "Divyanshu Bheem Rawat"
-            }
-        ]
-    }
 
 
 
@@ -223,17 +57,16 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
         <Head>
             <title>{`${MANGA_NAME} Chapter ${chapterNumber}`}</title>
             <meta name="description" content={DESCRIPTION} />
-            <link rel="canonical" href={`${DOMAIN}/${URL}`} />
+            <link rel="canonical" href={`${DOMAIN}/${URL}/`} />
             <meta property="og:title" content={`${MANGA_NAME} Chapter ${chapterNumber}`} />
             <meta property="og:description" content={DESCRIPTION} />
             <meta property="og:type" content="webiste" />
             <meta name="robots" content="follow, index, noarchive, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-            <meta property="og:url" content={`${DOMAIN}/${URL}`} />
+            <meta property="og:url" content={`${DOMAIN}/${URL}/`} />
             <meta property="og:site_name" content={`${APP_NAME}`} />
             <meta property="og:image" content={`${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}/1.webp`} />
             <meta property="og:image:secure_url" content={`${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}/1.webp`} />
             <meta property="og:image:type" content="image/webp" />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         </Head >
     );
 
@@ -255,7 +88,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                 <div className='flex justify-center px-5 text-[#85e1e6] text-[13px] mb-5'>
                     <div><a href={DOMAIN}>Home</a></div>
                     <div className='px-2'>{` -> `}</div>
-                    <div><a href={`${DOMAIN}/chapter-${chapterNumber}`}>{`${MANGA_NAME} Chapter ${chapterNumber}`}</a></div>
+                    <div><a href={`${DOMAIN}/chapter-${chapterNumber}/`}>{`${MANGA_NAME} Chapter ${chapterNumber}`}</a></div>
                 </div>
 
 
@@ -304,7 +137,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                         {previousChapter !== null ? (
                             <Link
                                 onClick={handleRedirect}
-                                href={`${DOMAIN}/${NEXT_PREVIOUS_PREFIX}-${previousChapter}`}>
+                                href={`${DOMAIN}/${NEXT_PREVIOUS_PREFIX}-${previousChapter}/`}>
                                 <button className="text-[black] text-[13px] hover:scale-105 active:scale-95 transition-transform rounded bg-[white] px-2 py-2 font-semibold">Previous</button>
                             </Link>
                         ) : (
@@ -314,7 +147,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                         {nextChapter !== null ? (
                             <Link
                                 onClick={handleRedirect}
-                                href={`${DOMAIN}/${NEXT_PREVIOUS_PREFIX}-${nextChapter}`}>
+                                href={`${DOMAIN}/${NEXT_PREVIOUS_PREFIX}-${nextChapter}/`}>
                                 <button className="text-[black] text-[13px] hover:scale-105 active:scale-95 transition-transform rounded bg-[white] px-2 py-2 font-semibold">Next</button>
                             </Link>
                         ) : (
@@ -341,17 +174,9 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                 <div className="text-white my-5">
                     <h2 className="text-3xl text-center my-5">{`${MANGA_NAME} Latest Chapters`}</h2>
                     {last5chapters?.map((chapter, index) => (
-                        <div key={index} className="text-center p-1.5 hover:underline"><a href={`${DOMAIN}/chapter-${chapter.chapterNumber}`}>{`${MANGA_NAME} Chapter ${chapter.chapterNumber}`}</a></div>
+                        <div key={index} className="text-center p-1.5 hover:underline"><a href={`${DOMAIN}/chapter-${chapter.chapterNumber}/`}>{`${MANGA_NAME} Chapter ${chapter.chapterNumber}`}</a></div>
                     ))}
                 </div>
-
-
-
-
-                <div className="flex justify-center">
-                    <iframe width="300" height="315" src="https://www.youtube.com/embed/2U3TVB17eqs?si=CfV7KIfC_DHANlN-&amp;start=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                </div>
-
 
 
 

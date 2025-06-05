@@ -22,7 +22,7 @@ export default function Home() {
 
   const chapters = sortedChapters.map((chapter) => ({
     number: chapter.chapterNumber,
-    url: `${DOMAIN}/${URL_PREFIX}-${chapter.chapterNumber}`
+    url: `${DOMAIN}/${URL_PREFIX}-${chapter.chapterNumber}/`
   }));
 
 
@@ -250,7 +250,7 @@ export default function Home() {
         <div className="text-white my-5">
           <h2 className="text-3xl text-center my-5">{`${MANGA_NAME} Latest Chapters`}</h2>
           {last5chapters?.map((chapter, index) => (
-            <div key={index} className="text-center p-1.5 hover:underline"><a href={`${DOMAIN}/chapter-${chapter.chapterNumber}`}>{`${MANGA_NAME} chapter ${chapter.chapterNumber}`}</a></div>
+            <div key={index} className="text-center p-1.5 hover:underline"><a href={`${DOMAIN}/chapter-${chapter.chapterNumber}/`}>{`${MANGA_NAME} chapter ${chapter.chapterNumber}`}</a></div>
           ))}
         </div>
 
