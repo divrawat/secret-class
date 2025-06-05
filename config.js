@@ -1,7 +1,7 @@
 // export const DOMAIN = 'http://localhost:3000';
-export const DOMAIN = 'https://www.secretclass.in.net';
+export const DOMAIN = 'https://secretclass.in.net';
 
-export const DOMAIN_NAME = 'www.secretclass.in.net';
+export const DOMAIN_NAME = 'secretclass.in.net';
 
 export const IMAGES_SUBDOMAIN = 'https://images.thesololevelingmanga.online/secret-class';
 export const IMAGES_SUBDOMAIN_LOGO = 'https://images.secretclass.in.net';
@@ -52,7 +52,6 @@ export const MANGA_SUMMARY = [
 
 
 export const navLinks = [
-    { text: 'Jinx Manga', href: `https://jinx.adoptedbyamurderousdukefamily.in.net` },
     { text: 'Chapter 1', href: `${DOMAIN}/chapter-1` },
     { text: 'Chapter 100', href: `${DOMAIN}/chapter-100` },
     { text: 'Chapter 200', href: `${DOMAIN}/chapter-200` },
