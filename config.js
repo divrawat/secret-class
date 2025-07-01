@@ -52,17 +52,17 @@ export const MANGA_SUMMARY = [
 
 
 export const navLinks = [
-    { text: 'Chapter 1', href: `${DOMAIN}/chapter-1` },
-    { text: 'Chapter 100', href: `${DOMAIN}/chapter-100` },
-    { text: 'Chapter 200', href: `${DOMAIN}/chapter-200` },
+    { text: 'Chapter 1', href: `${DOMAIN}/chapter-1/` },
+    { text: 'Chapter 100', href: `${DOMAIN}/chapter-100/` },
+    { text: 'Chapter 200', href: `${DOMAIN}/chapter-200/` },
 ];
 
 export const FooterLinks = [
-    { text: 'About', href: `${DOMAIN}/about` },
-    { text: 'Contact', href: `${DOMAIN}/contact` },
-    { text: 'Disclaimer', href: `${DOMAIN}/disclaimer` },
-    { text: 'Privacy Policy', href: `${DOMAIN}/privacy-policy` },
-    { text: 'Terms & Conditions', href: `${DOMAIN}/terms-and-conditions` }
+    { text: 'About', href: `${DOMAIN}/about/` },
+    { text: 'Contact', href: `${DOMAIN}/contact/` },
+    { text: 'Disclaimer', href: `${DOMAIN}/disclaimer/` },
+    { text: 'Privacy Policy', href: `${DOMAIN}/privacy-policy/` },
+    { text: 'Terms & Conditions', href: `${DOMAIN}/terms-and-conditions/` }
 ];
 
 
