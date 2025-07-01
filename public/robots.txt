@@ -1,4 +1,4 @@
 user-agent: *
 Disallow: /admin/
 
-Sitemap: https://thejjk.online/sitemap.xml
+Sitemap: https://secretclass.in.net/sitemap.xml
