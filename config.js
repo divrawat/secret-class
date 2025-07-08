@@ -305,6 +305,163 @@ export const chaptersData = [
     { "chapterNumber": "227", "numImages": "14" },
     { "chapterNumber": "228", "numImages": "23" },
     { "chapterNumber": "229", "numImages": "23" },
+    {
+        "chapterNumber": "230",
+        "numImages": 40
+    },
+    {
+        "chapterNumber": "231",
+        "numImages": 15
+    },
+    {
+        "chapterNumber": "232",
+        "numImages": 16
+    },
+    {
+        "chapterNumber": "233",
+        "numImages": 38
+    },
+    {
+        "chapterNumber": "234",
+        "numImages": 8
+    },
+    {
+        "chapterNumber": "235",
+        "numImages": 12
+    },
+    {
+        "chapterNumber": "236",
+        "numImages": 10
+    },
+    {
+        "chapterNumber": "237",
+        "numImages": 3
+    },
+    {
+        "chapterNumber": "238",
+        "numImages": 7
+    },
+    {
+        "chapterNumber": "239",
+        "numImages": 45
+    },
+    {
+        "chapterNumber": "240",
+        "numImages": 19
+    },
+    {
+        "chapterNumber": "241",
+        "numImages": 10
+    },
+    {
+        "chapterNumber": "242",
+        "numImages": 9
+    },
+    {
+        "chapterNumber": "243",
+        "numImages": 9
+    },
+    {
+        "chapterNumber": "244",
+        "numImages": 9
+    },
+    {
+        "chapterNumber": "245",
+        "numImages": 8
+    },
+    {
+        "chapterNumber": "246",
+        "numImages": 38
+    },
+    {
+        "chapterNumber": "247",
+        "numImages": 8
+    },
+    {
+        "chapterNumber": "248",
+        "numImages": 11
+    },
+    {
+        "chapterNumber": "249",
+        "numImages": 10
+    },
+    {
+        "chapterNumber": "250",
+        "numImages": 11
+    },
+    {
+        "chapterNumber": "251",
+        "numImages": 11
+    },
+    {
+        "chapterNumber": "252",
+        "numImages": 9
+    },
+    {
+        "chapterNumber": "253",
+        "numImages": 11
+    },
+    {
+        "chapterNumber": "254",
+        "numImages": 11
+    },
+    {
+        "chapterNumber": "255",
+        "numImages": 9
+    },
+    {
+        "chapterNumber": "256",
+        "numImages": 9
+    },
+    {
+        "chapterNumber": "257",
+        "numImages": 10
+    },
+    {
+        "chapterNumber": "258",
+        "numImages": 12
+    },
+    {
+        "chapterNumber": "259",
+        "numImages": 11
+    },
+    {
+        "chapterNumber": "260",
+        "numImages": 12
+    },
+    {
+        "chapterNumber": "261",
+        "numImages": 10
+    },
+    {
+        "chapterNumber": "262",
+        "numImages": 10
+    },
+    {
+        "chapterNumber": "263",
+        "numImages": 10
+    },
+    {
+        "chapterNumber": "264",
+        "numImages": 5
+    },
+    {
+        "chapterNumber": "265",
+        "numImages": 9
+    },
+    {
+        "chapterNumber": "266",
+        "numImages": 36
+    },
+    {
+        "chapterNumber": "267",
+        "numImages": 34
+    },
+    {
+        "chapterNumber": "268",
+        "numImages": 40
+    }
+
 ]
 
 
