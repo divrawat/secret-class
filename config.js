@@ -1,7 +1,7 @@
 // export const DOMAIN = 'http://localhost:3000';
-export const DOMAIN = 'https://secretclass.in.net';
+export const DOMAIN = 'https://ww1.secretclass.in.net';
 
-export const DOMAIN_NAME = 'secretclass.in.net';
+export const DOMAIN_NAME = 'ww1.secretclass.in.net';
 
 export const IMAGES_SUBDOMAIN = 'https://images.thesololevelingmanga.online/secret-class';
 export const IMAGES_SUBDOMAIN_LOGO = 'https://images.secretclass.in.net';
